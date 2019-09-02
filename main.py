@@ -16,6 +16,8 @@ def register():
 @app.route('/ajax_register',methods=['POST','GET'])
 def ajax_register():
     if request.method == 'POST':
+        import time
+        time.sleep(3)
         uname = request.form.get('username')
         email = request.form.get('email')
         crap = request.form.get('status')
